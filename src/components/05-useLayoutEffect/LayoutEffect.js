@@ -7,7 +7,7 @@ export const LayoutEffect = () => {
     
 
     const {state: counter, increment } = useCounter (1);
-    const {loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
+    const { data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
     const {quote} = !!data && data[0];
     const pTagRef = useRef();
     const [boxSize, setBoxSize] = useState();

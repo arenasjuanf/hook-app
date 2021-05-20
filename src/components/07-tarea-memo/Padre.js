@@ -30,7 +30,6 @@ export const Padre = () => {
             {
                 numeros.map( n => (
                     <Hijo
-                        className="m-2"
                         key={ n }
                         numero={ n }
                         incrementar={ incrementar }

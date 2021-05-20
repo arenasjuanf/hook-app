@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Padre } from './components/07-tarea-memo/Padre';
+import { TodoApp } from './components/08-useReducer/TodoApp';
+// import { Padre } from './components/07-tarea-memo/Padre';
 // import { CallbackHook } from './components/06-memos/CallbackHook';
 // import { MemoHook } from './components/06-memos/MemoHook';
-// import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
+//import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
 // import { RealExampleRef } from './components/04-useRef/RealExampleRef';
 // import { MultipleCustomHooks } from './components/03-examples/MultipleCustomHooks';
 // import { FormWithCustomHook } from './components/02-useEffect/FormWithCustomHook';
@@ -15,7 +16,7 @@ import { Padre } from './components/07-tarea-memo/Padre';
 
 
 ReactDOM.render(
-  <Padre />,
+  <TodoApp />,
   document.getElementById('root')
 );
 
@@ -23,3 +24,6 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
  
+
+
+//import './components/08-useReducer/intro-reducer';

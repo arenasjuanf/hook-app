@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    padding: 50px;
+}
+
+p{
+    cursor: pointer;
+    margin: 0;
+}
+
+.list-group-item{
+    align-items: center;
+    border-bottom: 1px solid #e1dada !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+.add-title{
+    border-radius: 5px;
+    background-color: #08278094;
+    color: white;
+    padding: 5px;
+}
+
+.list-container{
+    max-height: 500px;
+    overflow-y: auto;
+}

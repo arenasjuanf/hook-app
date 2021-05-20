@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import { useCounter } from '../../hooks/useCounter';
 import { useFetch } from '../../hooks/useFetch';
 import './layout.css';
@@ -13,8 +13,13 @@ export const LayoutEffect = () => {
     const [boxSize, setBoxSize] = useState();
 
     useLayoutEffect(() => {
+        console.log("sisas");
        const {width, height} = pTagRef.current.getBoundingClientRect();
        setBoxSize({width, height})
+    }, [quote])
+
+    useEffect(() => {
+        console.log("nonas")
     }, [quote])
 
     return (

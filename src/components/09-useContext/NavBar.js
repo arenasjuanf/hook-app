@@ -15,18 +15,17 @@ export const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
+                    <ul className="navbar-nav">
+                        
+                        <NavLink exact activeClassName="active" className="nav-item nav-link" to="./">Home</NavLink> 
                     
-                    <NavLink exact activeClassName="active" className="nav-item nav-link" to="./">Home</NavLink> 
-                
-                
-                    <NavLink exact activeClassName="active" className="nav-item nav-link" to="./about">About</NavLink> 
-                
-                
-                    <NavLink exact activeClassName="active" className="nav-item nav-link" to="./login">Login</NavLink> 
                     
-                   
-                </ul>
+                        <NavLink exact activeClassName="active" className="nav-item nav-link" to="./about">About</NavLink> 
+                    
+                    
+                        <NavLink exact activeClassName="active" className="nav-item nav-link" to="./login">Login</NavLink> 
+                        
+                    </ul>
                 </div>
             </div>
         </nav>

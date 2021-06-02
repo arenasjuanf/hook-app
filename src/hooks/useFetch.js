@@ -29,6 +29,11 @@ export const useFetch = (url) => {
                     data
                 })
                 
+            }).catch(() => {
+                setState({data:null,
+                    error:"error :(",
+                    loading: false
+                })
             })
 
         }
